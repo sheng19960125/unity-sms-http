@@ -15,5 +15,38 @@ RectTransform组件参数说明其中包含了(位子、旋轉、縮放、苗點
 
 ## unity Project
 1.點擊Assets -> Scenes 右鍵創建C# Script        
-默認開啟unity的編譯器，這部分也可以自行修改默認開啟的編譯器模式        
+默認開啟unity的編譯器，這部分也可以自行修改默認開啟的編譯器模式   
+2.默認創建之內容，Start() -> 默認啟動執行程序       
+```
+public class sms_post : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
+```
+
+## 簡易利用Button修改Text文本框
+利用Canvas底下拉版出一個Button與Text，並在Assets -> Scenes內建立一個自訂一命名之C#    
+點選Canvas下滑至底，並將剛剛建立的C#拉入當中      
+編譯自定義取名之C#，自定義建立
+```
+public Text getText;
+
+public void SetText(){
+    getText.text = "掰掰 Unity";
+}
+
+```
+選取Button下滑至Button(Script)內OnClick()中，點選`+`號，在原屬None中將在SampleScene內的Canvas拉入此None內皆榜定，在旁邊的下拉選單中即可選出你剛剛建立的Function    
+最基本的設定就完成啦！接著按下開始即可將原本的TEXT經過Button修改成為在C#內想修改的明子
+
 
